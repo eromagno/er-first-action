@@ -23,6 +23,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Says hello
+      - name: Print greeting
+        run: echo "Hello Actions !"
+        
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
@@ -35,3 +39,7 @@ jobs:
         run: |
           echo "Add other actions to build2",
           echo "test, and deploy your project."
+
+      # Says Goodbye
+      - name: Print greeting
+        run: echo "Goodbye Actions !"
